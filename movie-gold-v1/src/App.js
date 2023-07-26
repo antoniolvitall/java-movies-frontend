@@ -3,17 +3,23 @@ import api from './api/axiosConfig';
 import { useState, useEffect } from 'react';
 
 function App() {
+  
   const [movies, setMovies] = useState();
 
   const getMovies = async () =>{
 
-    try{
+    try
+    {
+
       const response = await api.get("/api/v1/movies");
 
       console.log(response.data);
 
       setMovies(response.data);
-    } catch(err) {
+
+    }
+    catch(err)
+    {
       console.log(err);
     }
   }
