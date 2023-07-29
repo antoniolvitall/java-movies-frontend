@@ -16,8 +16,6 @@ function App() {
 
       const response = await api.get("/api/v1/movies");
 
-      console.log(response.data);
-
       setMovies(response.data);
 
     }
@@ -25,6 +23,8 @@ function App() {
     {
       console.log(err);
     }
+
+
   }
 
   useEffect(() => {
@@ -35,9 +35,9 @@ function App() {
     <div className="App">
 
       <Routes>
-        <Route path="/" element={<Layout/>}>
-          <Route path="/" element={<Home/>}></Route>
-        </Route>
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />}></Route>
+          </Route>
       </Routes>
 
     </div>
