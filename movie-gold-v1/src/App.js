@@ -37,7 +37,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout/>}>
           <Route path="/" element={<Home/>}></Route>
-
         </Route>
       </Routes>
 
