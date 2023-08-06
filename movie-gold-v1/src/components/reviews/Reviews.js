@@ -32,11 +32,24 @@ const Reviews = ({getMovieData,movie,reviews,setReviews}) => {
         {
             console.error(err);
         }
-        
+    }
 
+    const getMovieData = async (movieId) => {
 
+        try 
+        {
+            const response = await api.get(`/api/v1/movies/${movieId}`);
+        } 
+        catch (error) 
+        {
+            
+        }
 
     }
+
+    useEffect(() => {
+        getMovies();
+    })
 
     return (
         <Container>
