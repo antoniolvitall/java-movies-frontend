@@ -22,7 +22,7 @@ const Hero = ({movies}) => {
             {
                 movies?.map((movies) => {
                     return(
-                        <Paper>
+                        <Paper key={movies.imdbId}>
                             <div className = 'movie-card-container'>
                                 <div className="movie-card" style={{"--img": `url(${movies.backdrops[0]})`}}>
                                     <div className = 'movie-detail'>
