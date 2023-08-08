@@ -39,8 +39,6 @@ const Reviews = ({getMovieData,movie,reviews,setReviews}) => {
         }
         
 
-
-
     }
 
   return (
